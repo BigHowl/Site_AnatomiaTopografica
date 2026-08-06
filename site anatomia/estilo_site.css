@@ -1,0 +1,549 @@
+
+/* =============================================
+    VARIÁVEIS DE COR E TIPOGRAFIA
+    Centralizadas aqui: para mudar a paleta do
+    site inteiro, só mude estes valores.
+============================================= */
+:root {
+    --cor-fundo:       #F8FAFB;
+    --cor-fundo-card:  #FFFFFF;
+    --cor-primaria:    #1A2E44;   /* azul escuro — títulos, header */
+    --cor-acento:      #2A9D8F;   /* teal — botões, destaques */
+    --cor-acento-claro:#E6F4F2;   /* teal bem claro — fundo de dica */
+    --cor-borda:       #E8EEF2;
+    --cor-texto:       #2D3748;
+    --cor-texto-suave: #718096;
+    --cor-erro:        #E53E3E;
+    --cor-sucesso:     #38A169;
+    --fonte-titulo:    'Playfair Display', Georgia, serif;
+    --fonte-corpo:     'Inter', system-ui, sans-serif;
+    --raio:            12px;
+    --sombra:          0 2px 16px rgba(26, 46, 68, 0.08);
+}
+
+/* =============================================
+    RESET BÁSICO
+    Remove margens e paddings padrão do navegador
+============================================= */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.7;
+}
+
+/* =============================================
+    CABEÇALHO (HEADER)
+============================================= */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 40px 24px 36px;
+    text-align: center;
+}
+
+header .disciplina {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cor-acento);        /* teal no fundo escuro */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    font-size: clamp(1.8rem, 4vw, 2.8rem); /* tamanho responsivo */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.75);
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* =============================================
+    NAVEGAÇÃO POR ABAS (TABS)
+    Cada aba leva para uma seção da página
+============================================= */
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 24px;
+    background-color: var(--cor-primaria);
+    flex-wrap: wrap;
+}
+
+/* Agora estiliza tanto <button> quanto <a> — visual idêntico */
+.tabs-nav button,
+.tabs-nav a {
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 8px 20px;
+  border-radius: 100px;
+  font-family: var(--fonte-corpo);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  /* Estas duas linhas são importantes para o <a>:      */
+  text-decoration: none;   /* remove o sublinhado padrão */
+  display: inline-block;   /* faz o <a> se comportar como bloco */
+}
+
+.tabs-nav button:hover,
+.tabs-nav a:hover {
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.tabs-nav button.ativa,
+.tabs-nav a.ativa {
+  background: var(--cor-acento);
+  border-color: var(--cor-acento);
+  color: white;
+}
+
+/* =============================================
+    CONTEÚDO PRINCIPAL
+============================================= */
+main {
+    max-width: 860px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* Cada seção/aba de conteúdo */
+.secao {
+    display: none;           /* escondida por padrão */
+    animation: fadeIn 0.3s ease;
+}
+
+.secao.ativa {
+    display: block;          /* exibida quando ativa */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Título de cada seção */
+.secao-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.6rem;
+    color: var(--cor-primaria);
+    margin-bottom: 6px;
+}
+
+.secao-descricao {
+    color: var(--cor-texto-suave);
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+}
+
+/* =============================================
+    CARD DE EXERCÍCIO
+    O marcador lateral colorido é a assinatura
+    visual do design — como um atlas anatômico
+============================================= */
+.exercicio {
+    background: var(--cor-fundo-card);
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+    padding: 28px 28px 28px 36px;  /* padding-left maior por causa da barra */
+    margin-bottom: 28px;
+    position: relative;            /* necessário para a barra lateral */
+    border: 1px solid var(--cor-borda);
+}
+
+/* Barra lateral colorida — a assinatura visual */
+.exercicio::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: var(--cor-acento);
+    border-radius: var(--raio) 0 0 var(--raio);
+}
+
+.exercicio-numero {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--cor-acento);
+    margin-bottom: 6px;
+}
+
+.exercicio h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 16px;
+}
+
+/* =============================================
+    IMAGEM DO EXERCÍCIO
+============================================= */
+.exercicio-imagem {
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;          /* não distorce a imagem */
+    border-radius: 8px;
+    background: #EEF2F5;          /* fundo cinza enquanto carrega */
+    margin-bottom: 20px;
+    border: 1px solid var(--cor-borda);
+    display: block;
+}
+
+/* Placeholder quando não há imagem ainda */
+.placeholder-imagem {
+    width: 100%;
+    height: 260px;
+    background: linear-gradient(135deg, #EEF2F5 0%, #E2E8F0 100%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 2px dashed var(--cor-borda);
+    color: var(--cor-texto-suave);
+    font-size: 0.9rem;
+    gap: 8px;
+}
+
+.placeholder-imagem span {
+    font-size: 2.5rem;
+}
+
+/* =============================================
+    CAMPOS DE RESPOSTA
+============================================= */
+.campo-grupo {
+    margin-bottom: 14px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    margin-bottom: 6px;
+}
+
+.campo-grupo input[type="text"],
+.campo-grupo textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--cor-borda);
+    border-radius: 8px;
+    font-family: var(--fonte-corpo);
+    font-size: 0.95rem;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: vertical;
+}
+
+/* Efeito ao clicar no campo */
+.campo-grupo input[type="text"]:focus,
+.campo-grupo textarea:focus {
+    outline: none;
+    border-color: var(--cor-acento);
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.15);
+}
+
+/* =============================================
+    BOTÕES
+============================================= */
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-family: var(--fonte-corpo);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+/* Botão principal — verificar resposta */
+.btn-principal {
+    background: var(--cor-acento);
+    color: white;
+}
+
+.btn-principal:hover {
+    background: #21867A;
+    transform: translateY(-1px);   /* leve "salto" ao hover */
+}
+
+/* Botão secundário — ver dica */
+.btn-secundario {
+    background: transparent;
+    color: var(--cor-acento);
+    border: 1.5px solid var(--cor-acento);
+}
+
+.btn-secundario:hover {
+    background: var(--cor-acento-claro);
+}
+
+/* Botão limpar */
+.btn-limpar {
+    background: transparent;
+    color: var(--cor-texto-suave);
+    border: 1.5px solid var(--cor-borda);
+}
+
+.btn-limpar:hover {
+    background: var(--cor-borda);
+}
+
+/* =============================================
+    FEEDBACK (CORRETO / ERRADO)
+============================================= */
+.feedback {
+    display: none;              /* invisível até o aluno verificar */
+    margin-top: 16px;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.feedback.correto {
+    background: #F0FFF4;
+    border: 1px solid #9AE6B4;
+    color: #276749;
+}
+
+.feedback.errado {
+    background: #FFF5F5;
+    border: 1px solid #FEB2B2;
+    color: #9B2C2C;
+}
+
+.feedback.visivel {
+    display: block;
+}
+
+/* =============================================
+    CAIXA DE DICA
+============================================= */
+.dica {
+    display: none;
+    margin-top: 14px;
+    padding: 14px 16px;
+    background: var(--cor-acento-claro);
+    border-left: 4px solid var(--cor-acento);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    color: #1A5C56;
+    animation: fadeIn 0.3s ease;
+}
+
+.dica.visivel {
+    display: block;
+}
+
+.dica strong {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+/* =============================================
+    LEGENDA DE MARCADORES NA IMAGEM
+============================================= */
+.legenda-marcadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.marcador-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--cor-primaria);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.marcador-badge .numero {
+    background: var(--cor-acento);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+/* =============================================
+    RODAPÉ
+============================================= */
+footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--cor-texto-suave);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--cor-borda);
+    margin-top: 40px;
+}
+
+/* =============================================
+    RESPONSIVIDADE MOBILE
+============================================= */
+@media (max-width: 600px) {
+    .exercicio {
+    padding: 20px 16px 20px 24px;
+    }
+
+    .botoes {
+    flex-direction: column;
+    }
+
+    .btn {
+    width: 100%;
+    text-align: center;
+    }
+}
+
+/* =============================================
+   ACCORDION DE GABARITO
+   Usa a tag nativa <details> do HTML —
+   sem JavaScript, funciona sozinha.
+============================================= */
+
+details {
+  border: 1.5px solid var(--cor-borda);
+  border-radius: var(--raio);
+  overflow: hidden;             /* esconde o conteúdo quando fechado */
+  background: var(--cor-fundo-card);
+  margin-bottom: 12px;
+}
+
+/* O <summary> é o cabeçalho clicável */
+summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  cursor: pointer;              /* muda o cursor para "mãozinha" */
+  font-family: var(--fonte-corpo);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  list-style: none;             /* remove o triângulo padrão do navegador */
+  user-select: none;            /* impede selecionar o texto ao clicar */
+  transition: background 0.2s;
+}
+
+/* Remove o triângulo padrão no Firefox e Safari */
+summary::-webkit-details-marker { display: none; }
+
+summary:hover {
+  background: var(--cor-acento-claro);
+}
+
+/* Quando o <details> está aberto, estiliza o cabeçalho */
+details[open] summary {
+  border-bottom: 1.5px solid var(--cor-borda);
+  background: var(--cor-acento-claro);
+}
+
+/* A seta gira 90° quando o accordion abre */
+.seta-accordion {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--cor-acento);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+details[open] .seta-accordion {
+  transform: rotate(90deg);     /* gira a seta quando aberto */
+}
+
+/* Corpo do gabarito — aparece quando abre */
+.gabarito-corpo {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Cada item de resposta */
+.gabarito-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* Número circular verde */
+.gabarito-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #F0FFF4;          /* verde bem claro */
+  border: 1.5px solid #9AE6B4;
+  color: #276749;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Texto da resposta */
+.gabarito-texto p {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+}
+
+.gabarito-texto .descricao {
+  font-size: 0.88rem;
+  color: var(--cor-texto-suave);
+  line-height: 1.6;
+}
+
+/* Linha divisória entre respostas */
+.gabarito-divider {
+  border: none;
+  border-top: 1px solid var(--cor-borda);
+  margin: 0;
+}

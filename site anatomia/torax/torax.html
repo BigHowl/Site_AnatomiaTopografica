@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="icone_anatomia.ico" type="image/x-icon">
+  <title>Anatomia Topográfica — Exercícios</title>
+
+  <!-- Fontes do Google Fonts (carregadas da internet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../estilo_site.css">
+  
+</head>
+
+
+<body>
+    <header>
+    <div>
+        <p class="disciplina">Universidade de São Paulo (USP) — FFCLRP </p>
+    </div>
+    <div>
+        <p>Disciplina de Anatomia Topográfica</p>
+    </div>
+    <h1>Exercícios Teóricos e Práticos</h1>
+    <p><small>Os exercícios foram estruturados e baseados nos feitos pelos monitores anteriores dessa disciplina.</small></p>
+  </header>
+
+  <!-- 
+       NAVEGAÇÃO POR ABAS
+       Cada botão mostra/esconde uma <section>
+   -->
+ <nav class="tabs-nav" role="tablist">
+  <a class="ativa" href="../index.html">🏠 Início</a>
+  <a href="torax.html"> Tórax</a>
+  <a href="../abdome/abdome.html"> Abdômen</a>
+  <a href="../pelve/pelve.html"> Pelve</a>
+  <a href="../superiores/cab_pes.html">Cabeça/Pescoço</a>
+  <a href="../superiores/sup.html">Superiores</a>
+  <a href="../inferiores/inf.html">Inferiores</a>
+ </nav>
+    
+    <main>
+        </section>
+        <!-- 
+            SEÇÃO: TÓRAX
+        -->
+        <section id="torax" class="secao ativa">
+        <h2 class="secao-titulo">Tórax</h2>
+        <h3 class="secao-titulo">Breve Introdução</h3>
+        <p>Como visto em aula, o tórax é uma região com muito ossos e é onde ocorrem algumas fraturas ósseas também, como de costelas por exemplo. Além disso, a região conta com órgãos como coração e pulmão, além de podermos visualizar o diafragma do paciente. Para a visualização dessa região anatômica, geralmente utiliza-se imagens de <strong>Raio-X</strong> e de <strong>Tomografia Computadorizada</strong>. (falar mais sobre o uso das imagens) <br> Nesta seção, iremos focar nos exercícios de tórax exclussivamente, mostrando principalmente imagens médicas, para que vocês possam já ir se acostumando com a visualização das estruturas.</p>
+        <p class="secao-descricao">Analise as imagens e identifique as estruturas marcadas com os números.</p>
+
+        <!-- EXERCÍCIO 1 -->
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 01</p>
+            <h3>Radiografia de tórax em PA — identifique as estruturas</h3>
+
+            <!--
+            COMO USAR IMAGENS:
+            Substitua o bloco .placeholder-imagem abaixo por uma tag <img>:
+            <img src="imagens/torax_01.jpg" alt="Radiografia de tórax PA" class="exercicio-imagem" />
+            O arquivo deve estar na pasta "imagens/" ao lado do index.html
+            -->
+            <div class="placeholder-imagem">
+            <span>🩻</span>
+            <p>Coloque aqui: <code>imagens/torax_01.jpg</code></p>
+            </div>
+
+            <!-- Badges indicando quantas estruturas identificar -->
+            <div class="legenda-marcadores">
+            <span class="marcador-badge"><span class="numero">1</span> Estrutura à direita</span>
+            <span class="marcador-badge"><span class="numero">2</span> Estrutura central</span>
+            <span class="marcador-badge"><span class="numero">3</span> Estrutura à esquerda</span>
+            </div>
+
+            <!-- Campos de resposta -->
+            <div class="campo-grupo">
+            <label for="ex1-r1">① Estrutura à direita</label>
+            <input type="text" id="ex1-r1" placeholder="Digite o nome da estrutura..." />
+            </div>
+
+            <div class="campo-grupo">
+            <label for="ex1-r2">② Estrutura central</label>
+            <input type="text" id="ex1-r2" placeholder="Digite o nome da estrutura..." />
+            </div>
+
+            <div class="campo-grupo">
+            <label for="ex1-r3">③ Estrutura à esquerda</label>
+            <input type="text" id="ex1-r3" placeholder="Digite o nome da estrutura..." />
+            </div>
+
+            <!-- Botões -->
+            <div class="botoes">
+            <button class="btn btn-principal" onclick="verificarEx1()">Verificar respostas</button>
+            <button class="btn btn-secundario" onclick="mostrarDica('dica-ex1')">Ver dica</button>
+            <button class="btn btn-limpar" onclick="limparExercicio('ex1-r1','ex1-r2','ex1-r3','feedback-ex1','dica-ex1')">Limpar</button>
+            </div>
+
+            <!-- Feedback (aparece após verificar) -->
+            <div id="feedback-ex1" class="feedback"></div>
+
+            <!-- Dica (aparece ao clicar em "Ver dica") -->
+            <div id="dica-ex1" class="dica">
+            <strong>💡 Dica</strong>
+            Observe a posição relativa à coluna vertebral. O mediastino divide o tórax em compartimentos. O pulmão direito tende a ser ligeiramente maior que o esquerdo por conta da posição do coração.
+            </div>
+        </article>
+
+        <!-- EXERCÍCIO 2 -->
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 02</p>
+            <h3>TC de tórax — corte axial</h3>
+
+            <div class="placeholder-imagem">
+            <span>🩻</span>
+            <p>Coloque aqui: <code>imagens/torax_tc_01.jpg</code></p>
+            </div>
+
+            <div class="campo-grupo">
+            <label for="ex2-r1">① Qual estrutura aparece em branco (alta densidade) no centro?</label>
+            <input type="text" id="ex2-r1" placeholder="Digite sua resposta..." />
+            </div>
+
+            <div class="campo-grupo">
+            <label for="ex2-r2">② Por que os pulmões aparecem em preto na TC?</label>
+            <textarea id="ex2-r2" rows="3" placeholder="Explique com suas palavras..."></textarea>
+            </div>
+
+            <div class="botoes">
+            <button class="btn btn-principal" onclick="verificarEx2()">Verificar respostas</button>
+            <button class="btn btn-secundario" onclick="mostrarDica('dica-ex2')">Ver dica</button>
+            <button class="btn btn-limpar" onclick="limparExercicio('ex2-r1','ex2-r2','feedback-ex2','dica-ex2')">Limpar</button>
+            </div>
+
+            <div id="feedback-ex2" class="feedback"></div>
+
+            <div id="dica-ex2" class="dica">
+            <strong>💡 Dica</strong>
+            Na TC, a escala de cinza representa a densidade do tecido (Unidades Hounsfield). O ar tem densidade muito baixa (≈ −1000 UH). O osso tem densidade muito alta (≈ +700 UH). Onde se encaixam os pulmões nessa escala?
+            </div>
+        </article>
+        </section>
+    </main>
+</body>
