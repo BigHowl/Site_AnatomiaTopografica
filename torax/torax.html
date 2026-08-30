@@ -48,13 +48,13 @@
         <section id="torax" class="secao ativa">
         <h2 class="secao-titulo">Tórax</h2>
         <h3 class="secao-titulo">Breve Introdução</h3>
-        <p>Como visto em aula, o tórax é uma região com muito ossos e é onde ocorrem algumas fraturas ósseas também, como de costelas por exemplo. Além disso, a região conta com órgãos como coração e pulmão, além de podermos visualizar o diafragma do paciente. Para a visualização dessa região anatômica, geralmente utiliza-se imagens de <strong>Raio-X</strong> e de <strong>Tomografia Computadorizada</strong>. (falar mais sobre o uso das imagens) <br> Nesta seção, iremos focar nos exercícios de tórax exclussivamente, mostrando principalmente imagens médicas, para que vocês possam já ir se acostumando com a visualização das estruturas.</p>
+        <p>Como visto em aula, o tórax é uma região com muito ossos e é onde ocorrem algumas fraturas ósseas também, como de costelas por exemplo. Além disso, a região conta com órgãos como coração e pulmão, além de podermos visualizar o diafragma do paciente. Para a visualização dessa região anatômica, geralmente utiliza-se imagens de <strong>Raio-X</strong> e de <strong>Tomografia Computadorizada</strong>. (falar mais sobre o uso das imagens) <br> Nesta seção, iremos focar nos exercícios de tórax exclussivamente, mostrando principalmente imagens médicas, para que vocês possam já ir se acostumando com a visualização das estruturas. Os primeiros exercícios de cada tipo serão introdutórios, sem certo ou errado, apenas para vocês treinarem. Depois, iremos colocar as estruturas apontadas, tudo isso com gabarito !</p>
         <p class="secao-descricao">Analise as imagens e identifique as estruturas marcadas com os números.</p>
 
         <!-- EXERCÍCIO 1 -->
         <article class="exercicio">
             <p class="exercicio-numero">Exercício 01</p>
-            <h3>Radiografia de tórax em PA — identifique as estruturas</h3>
+            <h3>Radiografia de tórax — Nomeie o máximo de estruturas que você conseguir na figura a seguir. </h3>
 
             <!--
             COMO USAR IMAGENS:
@@ -62,84 +62,628 @@
             <img src="imagens/torax_01.jpg" alt="Radiografia de tórax PA" class="exercicio-imagem" />
             O arquivo deve estar na pasta "imagens/" ao lado do index.html
             -->
-            <div class="placeholder-imagem">
-            <span>🩻</span>
-            <p>Coloque aqui: <code>imagens/torax_01.jpg</code></p>
-            </div>
+            <figure class="exercicio-figura">
+                <img src="img_torax/torax_nome(1).png" alt="imagem 1 torax">
+                <figcaption>Fonte: https://www.med.club/artigos/o-que-deve-ser-analisado-radiografia-de-torax</figcaption>
+            </figure>
 
             <!-- Badges indicando quantas estruturas identificar -->
             <div class="legenda-marcadores">
-            <span class="marcador-badge"><span class="numero">1</span> Estrutura à direita</span>
-            <span class="marcador-badge"><span class="numero">2</span> Estrutura central</span>
-            <span class="marcador-badge"><span class="numero">3</span> Estrutura à esquerda</span>
+            <span class="marcador-badge"><span class="numero">1</span> Ao todo temos 24 estruturas, mas algumas são muito específicas, então vale conferir o gabarito depois.</span>
             </div>
 
             <!-- Campos de resposta -->
             <div class="campo-grupo">
-            <label for="ex1-r1">① Estrutura à direita</label>
-            <input type="text" id="ex1-r1" placeholder="Digite o nome da estrutura..." />
+            <label for="ex1-r1">Nomeie aqui as estruturas, indicando o número antes do nome.</label>
+
+            <!-- Area de resposta aumenta conforme a resposta, diferente do input -->
+
+            <textarea id="ex1-r1" placeholder="Digite o nome da estrutura..." rows="1"></textarea>
             </div>
 
-            <div class="campo-grupo">
-            <label for="ex1-r2">② Estrutura central</label>
-            <input type="text" id="ex1-r2" placeholder="Digite o nome da estrutura..." />
-            </div>
 
-            <div class="campo-grupo">
-            <label for="ex1-r3">③ Estrutura à esquerda</label>
-            <input type="text" id="ex1-r3" placeholder="Digite o nome da estrutura..." />
-            </div>
-
-            <!-- Botões -->
-            <div class="botoes">
-            <button class="btn btn-principal" onclick="verificarEx1()">Verificar respostas</button>
-            <button class="btn btn-secundario" onclick="mostrarDica('dica-ex1')">Ver dica</button>
-            <button class="btn btn-limpar" onclick="limparExercicio('ex1-r1','ex1-r2','ex1-r3','feedback-ex1','dica-ex1')">Limpar</button>
-            </div>
-
-            <!-- Feedback (aparece após verificar) -->
-            <div id="feedback-ex1" class="feedback"></div>
-
-            <!-- Dica (aparece ao clicar em "Ver dica") -->
-            <div id="dica-ex1" class="dica">
-            <strong>💡 Dica</strong>
-            Observe a posição relativa à coluna vertebral. O mediastino divide o tórax em compartimentos. O pulmão direito tende a ser ligeiramente maior que o esquerdo por conta da posição do coração.
-            </div>
+           
         </article>
 
         <!-- EXERCÍCIO 2 -->
         <article class="exercicio">
             <p class="exercicio-numero">Exercício 02</p>
-            <h3>TC de tórax — corte axial</h3>
+            <h2>Exercício teórico de Raio-X</h2>
+            <h3>Nas imagens de raio-x, vemos a projeção de uma estrutura 3D em um plano 2D. A formação das estruturas depende do coeficiente de atenuação de cada uma. Na radiografia, temos 5 densidades consideradas básicas ordenadas da menor para a maior atenuação.</h3>
 
-            <div class="placeholder-imagem">
-            <span>🩻</span>
-            <p>Coloque aqui: <code>imagens/torax_tc_01.jpg</code></p>
+
+            <div class="campo-grupo">
+            <label for="ex2-r1">a) Liste as 5 densidades radiográficas básicas em ordem crescente de atenuação (do mais escuro/radiolucente ao mais branco/radiopaco; ex: ar)</label>
+            
+            <textarea id="ex2-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
             </div>
 
             <div class="campo-grupo">
-            <label for="ex2-r1">① Qual estrutura aparece em branco (alta densidade) no centro?</label>
-            <input type="text" id="ex2-r1" placeholder="Digite sua resposta..." />
+            <label for="ex2-r2">② b) Para cada uma dessas 5 densidades, cite uma estrutura correspondente.</label>
+            <textarea id="ex2-r2" rows="2" placeholder="Escreva sua resposta"></textarea>
             </div>
 
             <div class="campo-grupo">
-            <label for="ex2-r2">② Por que os pulmões aparecem em preto na TC?</label>
-            <textarea id="ex2-r2" rows="3" placeholder="Explique com suas palavras..."></textarea>
+            <label for="ex2-r3">② c) Explique o por que dos pulmões aparecerem predominantemente cinza/escuro/preto nessas imagens, enquanto os ossos aparecem brancos.</label>
+            <textarea id="ex2-r3" rows="2" placeholder="Escreva sua resposta"></textarea>
             </div>
 
-            <div class="botoes">
-            <button class="btn btn-principal" onclick="verificarEx2()">Verificar respostas</button>
-            <button class="btn btn-secundario" onclick="mostrarDica('dica-ex2')">Ver dica</button>
-            <button class="btn btn-limpar" onclick="limparExercicio('ex2-r1','ex2-r2','feedback-ex2','dica-ex2')">Limpar</button>
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 03</p>
+            <h2>Identificação de estruturas em TC</h2>
+            <h3>Nas imagens de tomografica computadorizada, algumas estruturas de tecido mole são vistas mais nitidamente, o que torna possível a nomeação de certos órgãos. A seguir temos um corte axial de TC da região do tórax, contendo 9 estruturas. Para fins de noção do corte, a estrutura 8 se trata da <strong>mama esquerda</strong> do paciente. <br> Nomeie o restante das estruturas.</h3>
+
+            <figure class="exercicio-figura">
+                <img src="../imagens_medicas/TC_torax_coracao_tampado.png" alt="imagem 2 torax">
+                <figcaption>Fonte: https://radiologia.online/anatomia-tc-torax/</figcaption>
+            </figure>
+
+            <div class="campo-grupo">
+            <textarea id="ex3-r1" placeholder="Nomeie as estruturas..." rows="2"></textarea>
             </div>
+        </article>
 
-            <div id="feedback-ex2" class="feedback"></div>
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 04</p>
+            <h2>Identificação de estruturas em TC</h2>
+            <h3>Tomografia do tórax, corte axial. Região do mediastino. <br> Nomeie as estruturas de 1 a 7.</h3>
 
-            <div id="dica-ex2" class="dica">
-            <strong>💡 Dica</strong>
-            Na TC, a escala de cinza representa a densidade do tecido (Unidades Hounsfield). O ar tem densidade muito baixa (≈ −1000 UH). O osso tem densidade muito alta (≈ +700 UH). Onde se encaixam os pulmões nessa escala?
+            <figure class="exercicio-figura">
+                <img src="../imagens_medicas/TC_axial_mediastino_tampado.png" alt="imagem 3 torax">
+                <figcaption>Fonte: https://radiologia.online/anatomia-tc-torax/</figcaption>
+            </figure>
+
+            <div class="campo-grupo">
+            <textarea id="ex4-r1" placeholder="Nomeie as estruturas..." rows="2"></textarea>
             </div>
         </article>
         </section>
+
+        <!-- ==========================================
+            GABARITO — RADIOGRAFIA DE TÓRAX PA
+            24 estruturas numeradas
+        =========================================== -->
+        <section style="margin-top: 40px;">
+        <details>
+            <summary>
+            <span class="seta-accordion">▶</span>
+            Gabarito — Estruturas da Radiografia de Tórax PA
+            </summary>
+
+            <div class="gabarito-corpo">
+            <p style="font-size: 0.85rem; color: var(--cor-texto-suave); margin-bottom: 16px;">
+                Numerações conforme imagem de referência. Algumas estruturas
+                aceitam nomenclatura alternativa.
+            </p>
+
+            <table class="gabarito-tabela">
+                <thead>
+                <tr>
+                    <th class="col-num">#</th>
+                    <th>Estrutura</th>
+                    <th>Observação</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <tr>
+                    <td class="col-num">1</td>
+                    <td>
+                    <span class="nome-estrutura">Partes moles cervicais</span>
+                    <div class="descricao-estrutura">Tecidos moles do pescoço visíveis na borda superior da radiografia.</div>
+                    </td>
+                    <td>Incluem musculatura e tecido subcutâneo.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">2</td>
+                    <td>
+                    <span class="nome-estrutura">Clavícula direita</span>
+                    <div class="descricao-estrutura">Osso longo horizontal da cintura escapular direita.</div>
+                    </td>
+                    <td>Referência para avaliar rotação do paciente.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">3</td>
+                    <td>
+                    <span class="nome-estrutura">Escápula direita</span>
+                    <div class="descricao-estrutura">Osso plano da cintura escapular, sobreposto ao pulmão direito.</div>
+                    </td>
+                    <td>Pode ser confundida com lesão pulmonar.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">4</td>
+                    <td>
+                    <span class="nome-estrutura">Ápice do pulmão direito</span>
+                    <div class="descricao-estrutura">Porção superior do pulmão direito, acima da primeira costela.</div>
+                    </td>
+                    <td>Região comum para tuberculose pulmonar.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">5</td>
+                    <td>
+                    <span class="nome-estrutura">Borda da veia cava superior</span>
+                    <div class="descricao-estrutura">Forma o bordo direito superior do mediastino.</div>
+                    </td>
+                    <td>Alargamento indica dilatação ou massa adjacente.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">6</td>
+                    <td>
+                    <span class="nome-estrutura">Ramos da artéria pulmonar direita</span>
+                    <div class="descricao-estrutura">Divisões da artéria pulmonar no hilo direito.</div>
+                    </td>
+                    <td>Hilo direito normalmente mais baixo que o esquerdo.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">7</td>
+                    <td>
+                    <span class="nome-estrutura">Borda do átrio direito</span>
+                    <div class="descricao-estrutura">Forma o bordo cardíaco direito inferior.</div>
+                    </td>
+                    <td>Dilatação sugere sobrecarga de câmaras direitas.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">8</td>
+                    <td>
+                    <span class="nome-estrutura">Hemidiafragma direito</span>
+                    <div class="descricao-estrutura">Cúpula diafragmática direita, normalmente mais elevada que a esquerda.</div>
+                    </td>
+                    <td>Mais alta por causa do fígado abaixo.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">9</td>
+                    <td>
+                    <span class="nome-estrutura">Ângulo costofrênico direito</span>
+                    <div class="descricao-estrutura">Ângulo entre o diafragma direito e a parede torácica lateral.</div>
+                    </td>
+                    <td>Apagamento indica derrame pleural.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">10</td>
+                    <td>
+                    <span class="nome-estrutura">Ângulo cardiofrênico direito</span>
+                    <div class="descricao-estrutura">Ângulo entre o coração e o hemidiafragma direito.</div>
+                    </td>
+                    <td>Pode conter gordura pericárdica.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">11</td>
+                    <td>
+                    <span class="nome-estrutura">Seio costofrênico posterior direito</span>
+                    <div class="descricao-estrutura">Recessão pleural posterior projetada sobre o diafragma.</div>
+                    </td>
+                    <td>Visível na incidência em PA como sobreposição.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">12</td>
+                    <td>
+                    <span class="nome-estrutura">Dome hepático / Fígado</span>
+                    <div class="descricao-estrutura">Borda superior do fígado visível abaixo do hemidiafragma direito.</div>
+                    </td>
+                    <td>Confirma posição do diafragma direito.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">13</td>
+                    <td>
+                    <span class="nome-estrutura">Traqueia</span>
+                    <div class="descricao-estrutura">Estrutura tubular radiotransparente na linha média superior.</div>
+                    </td>
+                    <td>Visível pela coluna de ar interna.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">14</td>
+                    <td>
+                    <span class="nome-estrutura">Clavícula esquerda</span>
+                    <div class="descricao-estrutura">Osso longo horizontal da cintura escapular esquerda.</div>
+                    </td>
+                    <td>Par com a clavícula direita — assimetria indica rotação.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">15</td>
+                    <td>
+                    <span class="nome-estrutura">Ápice do pulmão esquerdo</span>
+                    <div class="descricao-estrutura">Porção superior do pulmão esquerdo.</div>
+                    </td>
+                    <td>Simétrico ao ápice direito em condições normais.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">16</td>
+                    <td>
+                    <span class="nome-estrutura">Botão aórtico</span>
+                    <div class="descricao-estrutura">Projeção do arco aórtico na borda esquerda do mediastino superior.</div>
+                    </td>
+                    <td>Primeiro elemento da silhueta mediastinal esquerda.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">17</td>
+                    <td>
+                    <span class="nome-estrutura">Ramos da artéria pulmonar esquerda</span>
+                    <div class="descricao-estrutura">Divisões da artéria pulmonar no hilo esquerdo.</div>
+                    </td>
+                    <td>O hilo esquerdo é normalmente mais alto que o direito.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">18</td>
+                    <td>
+                    <span class="nome-estrutura">Borda do tronco pulmonar</span>
+                    <div class="descricao-estrutura">Segundo elemento da silhueta mediastinal esquerda.</div>
+                    </td>
+                    <td>Dilatação indica hipertensão pulmonar.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">19</td>
+                    <td>
+                    <span class="nome-estrutura">Borda do átrio esquerdo</span>
+                    <div class="descricao-estrutura">Terceiro elemento da silhueta mediastinal esquerda.</div>
+                    </td>
+                    <td>Dilatação causa dupla imagem à direita do mediastino.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">20</td>
+                    <td>
+                    <span class="nome-estrutura">Aorta descendente</span>
+                    <div class="descricao-estrutura">Porção descendente da aorta torácica, paravertebral esquerda.</div>
+                    </td>
+                    <td>Visível como linha opaca paralela à coluna vertebral.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">21</td>
+                    <td>
+                    <span class="nome-estrutura">Borda do ventrículo esquerdo</span>
+                    <div class="descricao-estrutura">Quarto elemento da silhueta mediastinal esquerda, forma o ápice cardíaco.</div>
+                    </td>
+                    <td>Índice cardiotorácico normal: menor que 0,5.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">22</td>
+                    <td>
+                    <span class="nome-estrutura">Hemidiafragma esquerdo</span>
+                    <div class="descricao-estrutura">Cúpula diafragmática esquerda, normalmente mais baixa que a direita.</div>
+                    </td>
+                    <td>Abaixo dela está o fundo gástrico.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">23</td>
+                    <td>
+                    <span class="nome-estrutura">Ângulo costofrênico esquerdo</span>
+                    <div class="descricao-estrutura">Ângulo entre o diafragma esquerdo e a parede torácica lateral.</div>
+                    </td>
+                    <td>Apagamento indica derrame pleural esquerdo.</td>
+                </tr>
+
+                <tr>
+                    <td class="col-num">24</td>
+                    <td>
+                    <span class="nome-estrutura">Bolha gástrica</span>
+                    <div class="descricao-estrutura">Bolha de ar no fundo gástrico, abaixo do hemidiafragma esquerdo.</div>
+                    </td>
+                    <td>Sua presença confirma a posição do diafragma esquerdo.</td>
+                </tr>
+
+                </tbody>
+            </table>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span class="seta-accordion">▶</span>
+                Gabarito - Exercício 02
+            </summary>
+
+            <div class="gabarito-corpo">
+                <div class="gabarito-item">
+                    <div class="gabarito-num">1</div>
+                    <div class="gabarito-texto">
+                        <p><strong>Item a</strong></p>
+                        <p class="descricao">Ar (Air), Gordura (Fat), Tecido mole/Água (Soft tissue), Osso (Bone) e Metal</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="gabarito-divider" />
+
+                
+            <div class="gabarito-corpo">
+                <div class="gabarito-item">
+                    <div class="gabarito-num">1</div>
+                    <div class="gabarito-texto">
+                        <p><strong>Item b</strong></p>
+                        <p class="descricao">Ar: Parênquima pulmonar aerado, luz da traqueia; Gordura: Planos fasciais subpleurais ou subcutâneo; Tecido mole/Água: Coração, vasos mediastinais, diafragma, musculatura peitoral; Osso: Costelas, clavículas, esterno, corpos vertebrais</p>
+                    </div>
+                </div>
+            </div>
+        
+
+        <hr class="gabarito-divider">
+
+            <div class="gabarito-corpo">
+                <div class="gabarito-item">
+                    <div class="gabarito-num">1</div>
+                    <div class="gabarito-texto">
+                        <p><strong>Item c</strong></p>
+                        <p class="descricao">O ar presente nos alvéolos pulmonares possui baixíssima densidade física, atenuando quase nada do feixe de raios-X (a radiação atinge livremente o detector, escurecendo-o). Já o tecido ósseo possui cálcio e maior densidade física, causando alta atenuação dos fótons (efeito fotoelétrico predominante), impedindo que a radiação atinja o detector e gerando uma sombra branca/radiopaca</p>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <section style="margin-top: 40px;">
+  <details>
+    <summary>
+      <span class="seta-accordion">▶</span>
+      Gabarito 04 — TC de Tórax em Corte Axial
+    </summary>
+
+    <div class="gabarito-corpo">
+      <p style="font-size: 0.85rem; color: var(--cor-texto-suave); margin-bottom: 16px;">
+        Corte axial ao nível do mediastino médio (T4–T5).
+        A Veia Cava Superior já aparece identificada na imagem como referência.
+      </p>
+
+      <table class="gabarito-tabela">
+        <thead>
+          <tr>
+            <th class="col-num">#</th>
+            <th>Estrutura</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td class="col-num">1</td>
+            <td>
+              <span class="nome-estrutura">Aorta ascendente</span>
+              <div class="descricao-estrutura">
+                Porção inicial da aorta, saindo do ventrículo esquerdo.
+                Aparece anterior e à direita da aorta descendente nesse corte.
+              </div>
+            </td>
+            <td>Alta densidade após contraste — parede espessa e circular.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">2</td>
+            <td>
+              <span class="nome-estrutura">Traqueia</span>
+              <div class="descricao-estrutura">
+                Estrutura aérea tubular na linha média posterior,
+                identificada pela baixa densidade do ar em seu interior.
+              </div>
+            </td>
+            <td>Aparece escura (anecoica) pela presença de ar.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">3</td>
+            <td>
+              <span class="nome-estrutura">Vértebra torácica</span>
+              <div class="descricao-estrutura">
+                Corpo vertebral torácico, estrutura óssea posterior central.
+                Alta densidade (branca) por ser tecido mineralizado.
+              </div>
+            </td>
+            <td>Nesse nível, corresponde à região de T4–T5.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">4</td>
+            <td>
+              <span class="nome-estrutura">Esôfago</span>
+              <div class="descricao-estrutura">
+                Estrutura tubular localizada posterior à traqueia
+                e anterior ao corpo vertebral, levemente à esquerda da linha média.
+              </div>
+            </td>
+            <td>Frequentemente colabado — aparece como pequena estrutura de partes moles.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">5</td>
+            <td>
+              <span class="nome-estrutura">Escápula</span>
+              <div class="descricao-estrutura">
+                Osso
+              </div>
+            </td>
+            <td>Alta densidade óssea — aparece em branco na TC.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">6</td>
+            <td>
+              <span class="nome-estrutura">Aorta descendente</span>
+              <div class="descricao-estrutura">
+                Porção descendente da aorta torácica, localizada
+                posterolateral esquerda, adjacente à coluna vertebral.
+              </div>
+            </td>
+            <td>Par com a aorta ascendente — juntas formam o arco aórtico nesse nível.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">7</td>
+            <td>
+              <span class="nome-estrutura">Esterno</span>
+              <div class="descricao-estrutura">
+                Osso plano anterior do tórax, na linha média.
+                Nesse corte corresponde ao corpo do esterno.
+              </div>
+            </td>
+            <td>Referência anterior importante para orientação do corte axial.</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+        <p style="font-size: 0.8rem; color: var(--cor-texto-suave); margin-top: 16px;">
+        <strong>Referência:</strong> Atlas de anatomia e radiologia torácica
+        baseado em imagens de cortes de TC de Tórax.
+            </p>
+            </div>
+        </details>
+
+        <section style="margin-top: 40px;">
+  <details>
+    <summary>
+      <span class="seta-accordion">▶</span>
+      Gabarito — TC de Tórax: Coração e Artérias Coronárias
+    </summary>
+
+    <div class="gabarito-corpo">
+      <p style="font-size: 0.85rem; color: var(--cor-texto-suave); margin-bottom: 16px;">
+        Corte axial ao nível das câmaras cardíacas. O ventrículo esquerdo
+        e a veia pulmonar já aparecem identificados na imagem como referência.
+      </p>
+
+      <table class="gabarito-tabela">
+        <thead>
+          <tr>
+            <th class="col-num">#</th>
+            <th>Estrutura</th>
+            <th>Observação</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td class="col-num">1</td>
+            <td>
+              <span class="nome-estrutura">Ventrículo direito</span>
+              <div class="descricao-estrutura">
+                Câmara cardíaca anterior direita, responsável pelo
+                bombeamento do sangue para a circulação pulmonar.
+              </div>
+            </td>
+            <td>Parede mais fina que o ventrículo esquerdo.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">2</td>
+            <td>
+              <span class="nome-estrutura">Artéria coronária direita</span>
+              <div class="descricao-estrutura">
+                Ramo da aorta ascendente que irriga o ventrículo direito,
+                átrio direito e parte inferior do ventrículo esquerdo.
+              </div>
+            </td>
+            <td>Visível no sulco atrioventricular direito após contraste.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">3</td>
+            <td>
+              <span class="nome-estrutura">Átrio direito</span>
+              <div class="descricao-estrutura">
+                Câmara cardíaca posterolateral direita, recebe o sangue
+                venoso das veias cavas superior e inferior.
+              </div>
+            </td>
+            <td>Forma o bordo cardíaco direito na radiografia PA.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">4</td>
+            <td>
+              <span class="nome-estrutura">Aorta ascendente</span>
+              <div class="descricao-estrutura">
+                Porção inicial da aorta, saindo do ventrículo esquerdo
+                anteriormente e à direita no mediastino.
+              </div>
+            </td>
+            <td>Alta densidade após contraste — lúmen bem delimitado.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">5</td>
+            <td>
+              <span class="nome-estrutura">Veia cava superior</span>
+              <div class="descricao-estrutura">
+                Drena o sangue venoso da metade superior do corpo
+                para o átrio direito.
+              </div>
+            </td>
+            <td>Localizada anterior e à direita da traqueia.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">6</td>
+            <td>
+              <span class="nome-estrutura">Veia pulmonar</span>
+              <div class="descricao-estrutura">
+                Retorna o sangue oxigenado dos pulmões para o átrio esquerdo.
+                Nesse corte corresponde à veia pulmonar inferior.
+              </div>
+            </td>
+            <td>Única veia do sistema pulmonar que conduz sangue oxigenado.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">7</td>
+            <td>
+              <span class="nome-estrutura">Artéria circunflexa</span>
+              <div class="descricao-estrutura">
+                Ramo da artéria coronária esquerda, percorre o sulco
+                atrioventricular esquerdo irrigando a parede lateral
+                do ventrículo esquerdo.
+              </div>
+            </td>
+            <td>Origina-se junto com a artéria descendente anterior.</td>
+          </tr>
+
+          <tr>
+            <td class="col-num">8</td>
+            <td>
+              <span class="nome-estrutura">Artéria descendente anterior</span>
+              <div class="descricao-estrutura">
+                Também chamada de artéria interventricular anterior (AIA).
+                Irriga a parede anterior do ventrículo esquerdo e o septo
+                interventricular. É a artéria coronária mais importante
+                clinicamente.
+              </div>
+            </td>
+            <td>Conhecida como "artéria da morte súbita" por sua importância clínica.</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <p style="font-size: 0.8rem; color: var(--cor-texto-suave); margin-top: 16px;">
+        <strong>Referência:</strong> Atlas de anatomia e radiologia torácica
+        baseado em imagens de cortes de TC de Tórax.
+      </p>
+        </div>
+        </details>
+
+
+
+        </section>
+
+
     </main>
 </body>
