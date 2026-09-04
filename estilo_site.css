@@ -200,36 +200,33 @@ main {
 /* =============================================
     IMAGEM DO EXERCÍCIO
 ============================================= */
-.exercicio-imagem {
-    width: 100%;
-    max-height: 380px;
-    object-fit: contain;          /* não distorce a imagem */
-    border-radius: 8px;
-    background: #EEF2F5;          /* fundo cinza enquanto carrega */
-    margin-bottom: 20px;
-    border: 1px solid var(--cor-borda);
-    display: block;
+.exercicio-figura {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;    /* centraliza a imagem */
 }
 
-/* Placeholder quando não há imagem ainda */
-.placeholder-imagem {
-    width: 100%;
-    height: 260px;
-    background: linear-gradient(135deg, #EEF2F5 0%, #E2E8F0 100%);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    border: 2px dashed var(--cor-borda);
-    color: var(--cor-texto-suave);
-    font-size: 0.9rem;
-    gap: 8px;
+.exercicio-figura img {
+  width: auto;            /* não estica horizontalmente */
+  max-width: 100%;        /* nunca passa da largura do card */
+  max-height: 500px;      /* limite vertical — ajuste conforme preferir */
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  display: block;
+  background: #0a0a0a;    /* fundo escuro para radiografias */
 }
 
-.placeholder-imagem span {
-    font-size: 2.5rem;
+.exercicio-figura figcaption {
+  font-size: 0.75rem;
+  color: var(--cor-texto-suave);
+  margin-top: 6px;
+  font-style: italic;
+  border-left: 2px solid var(--cor-borda);
+  padding-left: 8px;
+  align-self: flex-start;  /* referência alinhada à esquerda */
+  line-height: 1.5;
 }
 
 /* =============================================
@@ -267,6 +264,23 @@ main {
     outline: none;
     border-color: var(--cor-acento);
     box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.15);
+}
+
+.campo-grupo textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--cor-borda);
+  border-radius: 8px;
+  font-family: var(--fonte-corpo);
+  font-size: 0.95rem;
+  color: var(--cor-texto);
+  background: var(--cor-fundo);
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  resize: none;          /* ← remove a alça de redimensionar manual */
+  overflow: hidden;      /* ← esconde a barra de rolagem enquanto expande */
+  min-height: 42px;      /* ← altura mínima — equivale a uma linha */
+  line-height: 1.6;      /* ← espaçamento entre linhas consistente */
 }
 
 /* =============================================
@@ -546,4 +560,66 @@ details[open] .seta-accordion {
   border: none;
   border-top: 1px solid var(--cor-borda);
   margin: 0;
+}
+
+/* 
+   TABELA DE GABARITO
+   Para quando tem muitas respostas
+ */
+.gabarito-tabela {
+  width: 100%;
+  border-collapse: collapse;   /* remove espaço entre células */
+  font-size: 0.88rem;
+}
+
+.gabarito-tabela thead tr {
+  background: var(--cor-acento-claro);
+}
+
+.gabarito-tabela th {
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.gabarito-tabela td {
+  padding: 8px 12px;
+  vertical-align: top;
+  color: var(--cor-texto);
+  border-bottom: 1px solid var(--cor-borda);
+  line-height: 1.5;
+}
+
+/* Coluna do número — estreita e centralizada */
+.gabarito-tabela .col-num {
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--cor-acento);
+}
+
+/* Zebrado — linhas alternadas levemente coloridas */
+.gabarito-tabela tbody tr:nth-child(even) {
+  background: var(--cor-fundo);
+}
+
+.gabarito-tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Nome da estrutura em destaque */
+.gabarito-tabela .nome-estrutura {
+  font-weight: 600;
+  color: var(--cor-primaria);
+}
+
+/* Descrição complementar abaixo do nome */
+.gabarito-tabela .descricao-estrutura {
+  font-size: 0.82rem;
+  color: var(--cor-texto-suave);
+  margin-top: 2px;
 }

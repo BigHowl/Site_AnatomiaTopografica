@@ -123,3 +123,25 @@ function mostrarFeedback(idFeedback, acertos, total) {
   }
 }
 
+// ==============================================
+// AUTO-EXPAND nos textareas
+// Faz o campo crescer conforme o usuário digita,
+// igual ao campo de texto do Claude.
+//
+// document.querySelectorAll pega TODOS os
+// textareas da página de uma vez.
+// forEach percorre cada um e adiciona o evento.
+// ==============================================
+document.querySelectorAll('textarea').forEach(function(textarea) {
+
+  // Quando o usuário digitar qualquer coisa:
+  textarea.addEventListener('input', function() {
+
+    // Reset da altura para recalcular corretamente
+    // (necessário para quando o usuário apaga texto)
+    this.style.height = 'auto';
+
+    // Define a altura igual ao conteúdo interno
+    this.style.height = this.scrollHeight + 'px';
+  });
+});
