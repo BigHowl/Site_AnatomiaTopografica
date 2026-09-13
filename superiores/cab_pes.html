@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="icone_anatomia.ico" type="image/x-icon">
+  <title>Anatomia Topográfica — Exercícios</title>
+
+  <!-- Fontes do Google Fonts (carregadas da internet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../estilo_site.css">
+  
+</head>
+
+
+<body>
+    <header>
+    <div>
+        <p class="disciplina">Universidade de São Paulo (USP) — FFCLRP </p>
+    </div>
+    <div>
+        <p>Disciplina de Anatomia Topográfica</p>
+    </div>
+    <h1>Exercícios Teóricos e Práticos</h1>
+    <p><small>Os exercícios foram estruturados e baseados nos feitos pelos monitores anteriores dessa disciplina.</small></p>
+  </header>
+
+  <!-- 
+       NAVEGAÇÃO POR ABAS
+       Cada botão mostra/esconde uma <section>
+   -->
+ <nav class="tabs-nav" role="tablist">
+  <a class="ativa" href="../index.html">🏠 Início</a>
+  <a href="../torax.html"> Tórax</a>
+  <a href="../abdome/abdome.html"> Abdômen</a>
+  <a href="../pelve/pelve.html"> Pelve</a>
+  <a href="../superiores/cab_pes.html">Cabeça/Pescoço</a>
+  <a href="../superiores/sup.html">Superiores</a>
+  <a href="../inferiores/inf.html">Inferiores</a>
+ </nav>
+    
+    <main>
+        </section>
+        <!-- 
+            SEÇÃO: TÓRAX
+        -->
+        <section id="torax" class="secao ativa">
+        <h2 class="secao-titulo">Cabeça e Pescoço</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;"> <span id="indicador-progresso" class="progresso vazio"> 0/7 questões respondidas</span> <button class="btn btn-limpar" onclick="limparProgresso()">Clique para limpar o progresso</button></div>
+        <h3 class="secao-titulo">Breve Introdução</h3>
+        <p>A região da Cabeça e do Pescoço são regiões que apresentam boas terminações nervosas e também, uma boa quantidade de veias para serem estudadas. Também é uma região com cavidades e seios diversos para serem identificados, fazendo com que o uso de imagens de TC seja interessante para observação de tais estruturas. <br> No decorrer dos exercícios, iremos utilizar imagens de Ressonância Magnética (RM) para identificação de tecidos moles, principalmente na região cerebral, e imagens de Tomografia Computadorizada (TC) para demais identificações. Por ser uma região bem rica em estruturas, uma maior quantidade de exercícios de imagens (ou uma maior quantidade de estruturas a serem identificadas) serão disponibilizadas.</p>
+
+        
+
+        <!-- EXERCÍCIO 1 -->
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 01</p>
+            <h3>Os primeiros exercícios serão de imagens axiais da região da cabeça. Identifique as estruturas marcadas abaixo:</h3>
+
+            <!--
+            COMO USAR IMAGENS:
+            Substitua o bloco .placeholder-imagem abaixo por uma tag <img>:
+            <img src="imagens/torax_01.jpg" alt="Radiografia de tórax PA" class="exercicio-imagem" />
+            O arquivo deve estar na pasta "imagens/" ao lado do index.html
+            -->
+            <figure class="exercicio-figura">
+                <img src="img_cabeca/img_cabeca(1).png" alt="imagem 1 cabeça">
+                <figcaption>Fonte: https://casestacks.com/anatomy/brain/ct-brain-anatomy</figcaption>
+            </figure>
+
+            <!-- Badges indicando quantas estruturas identificar -->
+            <div class="legenda-marcadores">
+            <span class="marcador-badge"><span class="numero">1</span> As estruturas mostradas estão em inglês, mas vocês podem escrever em português a resposta. Dica: perceba que algumas estruturas se tratam dos Lobos.</span>
+            </div>
+
+            <!-- Campos de resposta -->
+            <div class="campo-grupo">
+            <label for="ex1-r1">Nomeie aqui as estruturas, indicando o número antes do nome.</label>
+
+            <!-- Area de resposta aumenta conforme a resposta, diferente do input -->
+
+            <textarea id="ex1-r1" placeholder="Digite o nome da estrutura..." rows="1"></textarea>
+            </div>
+
+
+           
+        </article>
+
+        <!-- EXERCÍCIO 2 -->
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 02</p>
+            <h2>Identificação de estruturas</h2>
+            <h3>Abaixo temos um corte axial de TC da região nasal. Nomeie as estruturas de 1 a 5. A estrutura marcada pela cor roxa é o cerebelo.</h3>
+
+            <figure class="exercicio-figura">
+                <img src="img_cabeca/img_cabeca(2).png" alt="imagem 2 cabeça">
+                <figcaption>Fonte: https://www.imaios.com/en/e-anatomy/brain/ct-brain</figcaption>
+            </figure>            
+
+            <div class="campo-grupo">
+            <label for="ex2-r1">Nomeie as estruturas colocando o número correspondente antes do nome.</label>
+            
+            <textarea id="ex2-r1" placeholder="Estrutura..." rows="2"></textarea>
+            </div>
+
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 03</p>
+            <h2>Funções das regiões cerebrais</h2>
+            <h3>Para quebrar um pouco os exercícios de imagens, gostaríamos de propor um exercício que ajuda a entender a interpretação de imagens médicas: associações com funções das regiões. Com base na imagem a seguir dos Lobos Cerebrais, diga qual a função do Lobo frontal, temporal, occipital e parietal.</h3>
+
+            <figure class="exercicio-figura">
+                <img src="img_cabeca/imagens_lobos.png" alt="lobos cerebrais">
+                <figcaption>Fonte: Extraído dos slides da Professora Dra. Renata Leoni</figcaption>
+            </figure>
+
+            <div class="campo-grupo">
+            <textarea id="ex3-r1" placeholder="Funções..." rows="3"></textarea>
+            </div>
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 04</p>
+            <h2>Identificação de cavidades</h2>
+            <h3>A imagem a seguir se trata de um corte sagital de TC. Com base nela, identifique as 5 estruturas marcadas que representam as cavidades da região da cabeça. Dica: são os ditos 'seios' da face.</h3>
+
+            <figure class="exercicio-figura">
+                <img src="img_cabeca/imagens_cavidades(seios).png" alt="cavidades">
+                <figcaption>Fonte: https://www.imaios.com/en/e-anatomy/brain/ct-brain/</figcaption>
+            </figure>
+
+            <div class="campo-grupo">
+            <textarea id="ex4-r1" placeholder="Nomeie as estruturas..." rows="2"></textarea>
+            </div>
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 05</p>
+            <h2>Identificação de estruturas em RM</h2>
+            <h3>Como muitas imagens de TC foram mostradas, é hora de irmos para a melhor modalidade de imagem médica: a ressonância magnética. Tentem notar a diferença entre as imagens ao comparar os exercícios, entenda que, tecidos moles são melhor vistos em IRM. <br> Para facilitar um pouco, as estruturas marcadas são dos ventrículos, glândulas e os núcleos da base.</h3>
+
+            <figure class="exercicio-figura">
+                <img src="img_cabeca/imagem_RM(1).png" alt="RM 1">
+                <figcaption>Fonte: https://www.imaios.com/en/e-anatomy/brain/mri-axial-brain</figcaption>
+            </figure>
+
+            <div class="campo-grupo">
+            <textarea id="ex5-r1" placeholder="Nomeie as estruturas..." rows="2"></textarea>
+            </div>
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 06</p>
+            <h2>Funcionamento da Ressonância Magnética</h2>
+            <h3>Para buscar entender a diferença entre as modalidades de imagens, essa questão irá abordar o funcionamento da ressonância magnética, e quais os conceitos por trás da aquisição dessas imagens. <br> Enquanto a radiografia e a tomografia computadorizada utilizam radiação ionizante (feixes de raios-X) que atravessam o corpo e são atenuados pelas estruturas, a Imagem por Ressonância Magnética (RM) gera fatias anatômicas do corpo utilizando um princípio físico completamente diferente.</h3>
+
+            <div class="campo-grupo">
+            <label for="ex6-r1">a) Explique, com base no que você entendeu em sala, como ocorre a interação do equipamento de RM com o corpo do paciente (átomos de hidrogênio).</label>
+
+            <textarea id="ex2-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+            <div class="campo-grupo">
+            <label for="ex6-r2">② b) Qual é a razão física e biológica pela qual a Ressonância Magnética consegue distinguir com tanta clareza as diferentes estruturas de tecidos moles (como músculos, gordura, órgãos abdominais e encéfalo) mesmo sem o uso de contraste? </label>
+            
+            <textarea id="ex2-r2" rows="2" placeholder="Escreva sua resposta"></textarea>
+            </div>
+
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 07</p>
+            <h2>Identificação de estruturas em RM</h2>
+            <h3>Identifique as estruturas listadas no corte sagital a seguir.  </h3>
+
+            <figure class="exercicio-figura">
+                <img src="img_cabeca/imagem_RM(2).png" alt="RM 1">
+                <figcaption>Fonte: https://www.imaios.com/en/e-anatomy/brain/mri-brain</figcaption>
+            </figure>
+
+            <div class="campo-grupo">
+            <textarea id="ex7-r1" placeholder="Nomeie as estruturas..." rows="3"></textarea>
+            </div>
+        </article>
+
+        <h2 class="secao-titulo">Exercícios focados para prova</h2>
+        <p>Os exercícios a seguir foram selecionados pela Prof. Renata para prepará-los para a primeira prova. É de suma importância que realizem os exercícios e, depois, confiram as respostas. </p>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 08</p>
+            <h2>Escolha de estrutura</h2>
+            <h3>Durante o exame físico da cabeça e pescoço, o examinador identifica uma proeminência localizada na região lateral da face, formada pela união dos processos do osso zigomático e do osso temporal. Essa estrutura corresponde ao:</h3>
+
+            <div class="campo-grupo">
+            <form class="opcoes">
+                <label><input type="radio" name="cp1-q8" value="A"> A) Arco superciliar</label>
+                <label><input type="radio" name="cp1-q8" value="B"> B) Arco zigomático</label>
+                <label><input type="radio" name="cp1-q8" value="C"> C) Ângulo da mandíbula</label>
+                <label><input type="radio" name="cp1-q8" value="D"> D) Processo mastoide</label>
+                <label><input type="radio" name="cp1-q8" value="E"> E) Nasio</label>
+            </form>
+            </div>
+    
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q8', 'B', 'fb-cp1-q8')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q8" class="feedback"></div>
+
+        </article>  
+        
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 09</p>
+            <h2>Escolha de estrutura</h2>
+            <h3>Um paciente apresenta uma lesão localizada na região da sela túrcica. Considerando a anatomia dessa região, qual estrutura provavelmente estará diretamente relacionada à lesão?</h3>
+
+            <div class="campo-grupo">
+            <form class="opcoes">
+                <label><input type="radio" name="q1" value="A"> A) Glândula tireoide</label>
+                <label><input type="radio" name="q1" value="B"> B) Glândula pineal</label>
+                <label><input type="radio" name="q1" value="C"> C) Hipófise</label>
+                <label><input type="radio" name="q1" value="C"> C) Glândula parótida</label>
+                <label><input type="radio" name="q1" value="C"> C) Glândula submandibular</label>
+            </form>
+            </div>
+
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q6', 'C', 'fb-cp1-q6')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q6" class="feedback"></div>
+
+        </article> 
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 10</p>
+            <h2>Escolha de estrutura</h2>
+            <h3>Um paciente apresenta limitação importante para realizar movimentos de rotação da cabeça, como no gesto de dizer “não”. Qual vértebra cervical está principalmente relacionada a esse movimento?</h3>
+
+            <div class="campo-grupo">
+            <form class="opcoes">
+                <label><input type="radio" name="q1" value="A"> A) C1 (atlas)</label>
+                <label><input type="radio" name="q1" value="B"> B) C2 (áxis)</label>
+                <label><input type="radio" name="q1" value="C"> C) C3</label>
+                <label><input type="radio" name="q1" value="C"> C) C6</label>
+                <label><input type="radio" name="q1" value="C"> C) C7</label>
+            </form>
+            </div>
+
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q6', 'C', 'fb-cp1-q6')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q6" class="feedback"></div>
+
+        </article>
+
+        <article class="exercicio" id="exercicio-cp1-q4">
+        <p class="exercicio-numero">Questão 11 — Cabeça e Pescoço I</p>
+        <h3>Uma característica anatômica particular das vértebras cervicais é a presença:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="q1" value="A"> A) Do forame vertebral exclusivamente em C1 e C2</label>
+            <label><input type="radio" name="q1" value="B"> B) De forames transversos que permitem a passagem de artérias</label>
+            <label><input type="radio" name="q1" value="C"> C) De corpos vertebrais maiores que os das vértebras lombares</label>
+            <label><input type="radio" name="q1" value="D"> D) De discos intervertebrais entre C1 e C2</label>
+            <label><input type="radio" name="q1" value="E"> E) Do processo odontoide em todas as vértebras cervicais</label>
+        </form>
+        </div>
+
+        </article>
+
+        <article class="exercicio" id="exercicio-cp1-q5">
+        <p class="exercicio-numero">Questão 12 — Cabeça e Pescoço I</p>
+        <h3>Um paciente apresenta dificuldade para movimentar o olho para baixo,especialmente ao descer escadas. A avaliação neurológica sugere comprometimento do nervo troclear. Qual músculo ocular está diretamente relacionado a esse nervo?</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="cp1-q5" value="A"> A) Reto lateral</label>
+            <label><input type="radio" name="cp1-q5" value="B"> B) Reto medial</label>
+            <label><input type="radio" name="cp1-q5" value="C"> C) Reto superior</label>
+            <label><input type="radio" name="cp1-q5" value="D"> D) Oblíquo superior</label>
+            <label><input type="radio" name="cp1-q5" value="E"> E) Oblíquo inferior</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q5', 'D', 'fb-cp1-q5')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q5" class="feedback"></div>
+        </article>
+
+        <article class="exercicio" id="exercicio-cp1-q6">
+        <p class="exercicio-numero">Questão 13 — Cabeça e Pescoço I</p>
+        <h3>Os seios paranasais são cavidades preenchidas por ar que:</h3>
+
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="cp1-q6" value="A"> A) Não apresentam comunicação com a cavidade nasal</label>
+            <label><input type="radio" name="cp1-q6" value="B"> B) Estão localizados exclusivamente no osso frontal</label>
+            <label><input type="radio" name="cp1-q6" value="C"> C) Recebem seus nomes de acordo com os ossos nos quais estão localizados</label>
+            <label><input type="radio" name="cp1-q6" value="D"> D) São preenchidos normalmente por líquido cerebrospinal</label>
+            <label><input type="radio" name="cp1-q6" value="E"> E) Pertencem exclusivamente à cavidade craniana</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q6', 'C', 'fb-cp1-q6')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q6" class="feedback"></div>
+        </article>
+
+        <article class="exercicio" id="exercicio-cp1-q7">
+        <p class="exercicio-numero">Questão 14 — Cabeça e Pescoço I</p>
+        <h3>Em relação à vascularização da cabeça e do pescoço, assinale a alternativa correta:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="cp1-q7" value="A"> A) A artéria carótida interna é um ramo terminal da artéria carótida externa</label>
+            <label><input type="radio" name="cp1-q7" value="B"> B) As artérias vertebrais geralmente se originam diretamente da artéria carótida comum</label>
+            <label><input type="radio" name="cp1-q7" value="C"> C) As artérias vertebrais ascendem através dos forames transversos das vértebras cervicais</label>
+            <label><input type="radio" name="cp1-q7" value="D"> D) As artérias vertebrais entram no crânio através do canal carotídeo</label>
+            <label><input type="radio" name="cp1-q7" value="E"> E) As artérias vertebrais se unem para formar a artéria carótida interna</label>
+        </form>
+        </div>
+
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q7', 'C', 'fb-cp1-q7')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q7" class="feedback"></div>
+        </article>
+
+        <article class="exercicio" id="exercicio-cp1-q8">
+        <p class="exercicio-numero">Questão 15 — Cabeça e Pescoço I</p>
+        <h3>Um paciente apresenta uma lesão do nervo hipoglosso. Qual alteração clínica é mais esperada?</h3>
+
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="cp1-q8" value="A"> A) Perda da audição</label>
+            <label><input type="radio" name="cp1-q8" value="B"> B) Paralisia do músculo oblíquo superior</label>
+            <label><input type="radio" name="cp1-q8" value="C"> C) Desvio da língua para o lado da lesão</label>
+            <label><input type="radio" name="cp1-q8" value="D"> D) Perda da sensibilidade da face</label>
+            <label><input type="radio" name="cp1-q8" value="E"> E) Incapacidade de fechar os olhos</label>
+        </form>
+        </div>
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q8', 'C', 'fb-cp1-q8')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q8" class="feedback"></div>
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 16</p>
+            <h2>Questões discurssiva</h2>
+            <h3>Compare as funções do atlas (C1) e do áxis (C2), destacando as características anatômicas que permitem a participação dessas vértebras nos movimentos da cabeça.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex16-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 17</p>
+            <h2>Questões discurssiva</h2>
+            <h3>Um paciente apresenta uma lesão expansiva da hipófise. Explique a relaçãotopográfica entre a hipófise e as estruturas ósseas e neurais adjacentes e descreva uma possível manifestação clínica decorrente do crescimento da lesão.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex17-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 18</p>
+            <h2>Questões discurssiva</h2>
+            <h3>Descreva o trajeto das artérias vertebrais desde sua origem até a formação da artéria basilar. Relacione esse trajeto com as estruturas ósseas da coluna cervical e da base do crânio.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex18-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+    
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 19</p>
+            <h2>Questões discurssiva</h2>
+            <h3>Explique a drenagem linfática da cabeça e do pescoço, diferenciando a drenagem superficial da drenagem profunda. Quais são os principais grupos de linfonodos envolvidos e qual é o destino final da drenagem linfática dessa região?</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex19-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+
+        </section>
+
+        <!-- ==========================================
+            GABARITO — RADIOGRAFIA DE TÓRAX PA
+            24 estruturas numeradas
+        =========================================== -->
+
+
+
+    </main>
+
+    <script src="../scripts.js"></script>
+    
+</body>
