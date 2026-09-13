@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="icone_anatomia.ico" type="image/x-icon">
+  <title>Anatomia Topográfica — Exercícios</title>
+
+  <!-- Fontes do Google Fonts (carregadas da internet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../estilo_site.css">
+  
+</head>
+
+
+<body>
+    <header>
+    <div>
+        <p class="disciplina">Universidade de São Paulo (USP) — FFCLRP </p>
+    </div>
+    <div>
+        <p>Disciplina de Anatomia Topográfica</p>
+    </div>
+    <h1>Exercícios Teóricos e Práticos</h1>
+    <p><small>Os exercícios foram estruturados e baseados nos feitos pelos monitores anteriores dessa disciplina.</small></p>
+  </header>
+
+  <!-- 
+       NAVEGAÇÃO POR ABAS
+       Cada botão mostra/esconde uma <section>
+   -->
+ <nav class="tabs-nav" role="tablist">
+  <a class="ativa" href="../index.html">🏠 Início</a>
+  <a href="../torax.html"> Tórax</a>
+  <a href="../abdome/abdome.html"> Abdômen</a>
+  <a href="../pelve/pelve.html"> Pelve</a>
+  <a href="../superiores/cab_pes.html">Cabeça/Pescoço</a>
+  <a href="../superiores/sup.html">Superiores</a>
+  <a href="../inferiores/inf.html">Inferiores</a>
+ </nav>
+    
+    <main>
+        </section>
+        <!-- 
+            SEÇÃO: TÓRAX
+        -->
+        <section id="torax" class="secao ativa">
+        <h2 class="secao-titulo">Membros Inferiores</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;"> <span id="indicador-progresso" class="progresso vazio"> 0/7 questões respondidas</span> <button class="btn btn-limpar" onclick="limparProgresso()">Clique para limpar o progresso</button></div>
+        <h3 class="secao-titulo">Breve Introdução</h3>
+        <p>De modo análogo à seção de membros superiores, esta seção contará com exercícios selecionados pela professora para a P1. Recomenda-se estudar um atlas e pesquisar sobre as funções das partes do corpo estudadas nessa etapa. Haverão exercícios de multipla escolha, discurssivas e de imagem para vocês se prepararem.  </p>
+
+        
+
+        <!-- EXERCÍCIO 1 -->
+        <article class="exercicio" id="exercicio-sup-q1">
+        <p class="exercicio-numero">Questão 01 — Membros Superiores</p>
+        <h3>Qual estrutura óssea constitui a principal conexão óssea entre o membro superior e o tronco?</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q1" value="A"> A) Escápula</label>
+            <label><input type="radio" name="sup-q1" value="B"> B) Úmero</label>
+            <label><input type="radio" name="sup-q1" value="C"> C) Clavícula</label>
+            <label><input type="radio" name="sup-q1" value="D"> D) Rádio</label>
+            <label><input type="radio" name="sup-q1" value="E"> E) Esterno</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q1', 'C', 'fb-sup-q1')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q1" class="feedback"></div>
+        </article>
+
+
+        <!-- EXERCÍCIO 2 -->
+        <article class="exercicio" id="exercicio-sup-q2">
+        <p class="exercicio-numero">Questão 02 — Membros Superiores</p>
+        <h3>Sobre a escápula, assinale a alternativa correta:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q2" value="A"> A) É um osso longo</label>
+            <label><input type="radio" name="sup-q2" value="B"> B) Está localizada no antebraço</label>
+            <label><input type="radio" name="sup-q2" value="C"> C) Sua espinha, acrômio, margem medial e ângulo inferior podem ser palpados</label>
+            <label><input type="radio" name="sup-q2" value="D"> D) É o único osso que conecta diretamente o membro superior ao tronco</label>
+            <label><input type="radio" name="sup-q2" value="E"> E) É um osso do esqueleto axial</label>
+        </form>
+        </div>  
+
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q2', 'C', 'fb-sup-q2')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q2" class="feedback"></div>
+        </article>
+
+
+        <article class="exercicio" id="exercicio-sup-q3">
+        <p class="exercicio-numero">Questão 03 — Membros Superiores</p>
+        <h3>Qual dos ossos a seguir faz parte do antebraço ?</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q3" value="A"> A) Úmero</label>
+            <label><input type="radio" name="sup-q3" value="B"> B) Escápula</label>
+            <label><input type="radio" name="sup-q3" value="C"> C) Rádio</label>
+            <label><input type="radio" name="sup-q3" value="D"> D) Metacarpo</label>
+            <label><input type="radio" name="sup-q3" value="E"> E) Clavícula</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q3', 'C', 'fb-sup-q3')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q3" class="feedback"></div>
+        </article>
+
+        <article class="exercicio" id="exercicio-sup-q4">
+        <p class="exercicio-numero">Questão 04 — Membros Superiores</p>
+        <h3>Um paciente sofre uma fratura do colo cirúrgico do úmero. Qual estrutura nervosa apresenta risco de lesão?</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q4" value="A"> A) Nervo mediano</label>
+            <label><input type="radio" name="sup-q4" value="B"> B) Nervo ulnar</label>
+            <label><input type="radio" name="sup-q4" value="C"> C) Nervo axilar</label>
+            <label><input type="radio" name="sup-q4" value="D"> D) Nervo musculocutâneo</label>
+            <label><input type="radio" name="sup-q4" value="E"> E) Nervo supraescapular</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q4', 'C', 'fb-sup-q4')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q4" class="feedback"></div>
+        </article>
+
+
+        <article class="exercicio" id="exercicio-sup-q5">
+        <p class="exercicio-numero">Questão 05 — Membros Superiores</p>
+        <h3>Uma lesão completa do nervo supraescapular pode resultar principalmente em:</h3>
+        
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q5" value="A"> A) Perda da flexão dos dedos</label>
+            <label><input type="radio" name="sup-q5" value="B"> B) Incapacidade de iniciar a abdução do braço e redução da rotação do braço</label>
+            <label><input type="radio" name="sup-q5" value="C"> C) Perda da extensão do punho</label>
+            <label><input type="radio" name="sup-q5" value="D"> D) Incapacidade de pronar o antebraço</label>
+            <label><input type="radio" name="sup-q5" value="E"> E) Perda da sensibilidade da palma da mão</label>
+        </form>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q5', 'B', 'fb-sup-q5')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q5" class="feedback"></div>
+        </article>
+
+
+        <article class="exercicio" id="exercicio-sup-q6">
+        <p class="exercicio-numero">Questão 06 — Membros Superiores</p>
+        <h3>Na fossa cubital, o estetoscópio é colocado sobre a:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q6" value="A"> A) Artéria radial</label>
+            <label><input type="radio" name="sup-q6" value="B"> B) Artéria ulnar</label>
+            <label><input type="radio" name="sup-q6" value="C"> C) Artéria axilar</label>
+            <label><input type="radio" name="sup-q6" value="D"> D) Artéria braquial</label>
+            <label><input type="radio" name="sup-q6" value="E"> E) Artéria subclávia</label>
+        </form>
+        </div>
+        
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q6', 'D', 'fb-sup-q6')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q6" class="feedback"></div>
+        </article>
+
+
+        <article class="exercicio" id="exercicio-sup-q7">
+        <p class="exercicio-numero">Questão 07 — Membros Superiores</p>
+        <h3>Qual conjunto apresenta somente ossos do carpo?</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q7" value="A"> A) Escafoide, semilunar e capitato</label>
+            <label><input type="radio" name="sup-q7" value="B"> B) Rádio, ulna e escafoide</label>
+            <label><input type="radio" name="sup-q7" value="C"> C) Trapézio, metacarpo e hamato</label>
+            <label><input type="radio" name="sup-q7" value="D"> D) Capitato, metacarpo e pisiforme</label>
+            <label><input type="radio" name="sup-q7" value="E"> E) Hamato, falange e trapezoide</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q7', 'A', 'fb-sup-q7')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q7" class="feedback"></div>
+        </article>
+
+
+        <article class="exercicio" id="exercicio-sup-q8">
+        <p class="exercicio-numero">Questão 08 — Membros Superiores</p>
+        <h3>A síndrome do túnel do carpo está diretamente relacionada à compressão do:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q8" value="A"> A) Nervo radial</label>
+            <label><input type="radio" name="sup-q8" value="B"> B) Nervo ulnar</label>
+            <label><input type="radio" name="sup-q8" value="C"> C) Nervo musculocutâneo</label>
+            <label><input type="radio" name="sup-q8" value="D"> D) Nervo mediano</label>
+            <label><input type="radio" name="sup-q8" value="E"> E) Nervo axilar</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q8', 'D', 'fb-sup-q8')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q8" class="feedback"></div>
+        </article>
+  
+        
+        <article class="exercicio" id="exercicio-sup-q9">
+        <p class="exercicio-numero">Questão 09 — Membros Superiores</p>
+        <h3>O túnel do carpo é formado:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q9" value="A"> A) Apenas pelos músculos flexores do antebraço</label>
+            <label><input type="radio" name="sup-q9" value="B"> B) Pelos ossos do carpo em sua base e pelo ligamento transverso do carpo em seu teto</label>
+            <label><input type="radio" name="sup-q9" value="C"> C) Pela ulna e pelo rádio</label>
+            <label><input type="radio" name="sup-q9" value="D"> D) Pelo ligamento colateral ulnar e rádio</label>
+            <label><input type="radio" name="sup-q9" value="E"> E) Exclusivamente pelos ligamentos dorsais do punho</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q9', 'B', 'fb-sup-q9')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q9" class="feedback"></div>
+        </article>
+ 
+
+        <article class="exercicio" id="exercicio-sup-q10">
+        <p class="exercicio-numero">Questão 10 — Membros Superiores</p>
+        <h3>Uma lesão do nervo radial pode produzir:</h3>
+        
+        <div class="campo-grupo">
+        <form class="opcoes">
+            <label><input type="radio" name="sup-q10" value="A"> A) Perda dos movimentos do punho e alteração sensorial na superfície dorsolateral da mão</label>
+            <label><input type="radio" name="sup-q10" value="B"> B) Perda exclusiva da flexão dos dedos</label>
+            <label><input type="radio" name="sup-q10" value="C"> C) Perda da sensibilidade exclusivamente na palma da mão</label>
+            <label><input type="radio" name="sup-q10" value="D"> D) Incapacidade de iniciar a abdução do braço</label>
+            <label><input type="radio" name="sup-q10" value="E"> E) Paralisia exclusiva dos músculos intrínsecos da mão</label>
+        </form>
+        </div>
+        
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('sup-q10', 'A', 'fb-sup-q10')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-sup" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-sup-q10" class="feedback"></div>
+        </article>
+
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 11</p>
+            <h2>Questões discurssiva - Membros Inferiores</h2>
+            <h3>Descreva os principais componentes ósseos do membro inferior, desde a cintura pélvica até o pé, destacando a participação do acetábulo, fêmur, patela, tíbia e fíbula nas articulações do membro inferior.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex18-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+    
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 12</p>
+            <h2>Questões discurssiva - Membros Inferiores</h2>
+            <h3>Explique a organização muscular da coxa e da perna em compartimentos,  relacionando os principais grupos musculares apresentados na aula às suas funções nos movimentos do membro inferior.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex19-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 13</p>
+            <h2>Questões discurssiva - Membros Inferiores</h2>
+            <h3>Explique a importância funcional dos ligamentos cruzados do joelho.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex19-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+
+        <article class="exercicio">
+            <p class="exercicio-numero">Exercício 14</p>
+            <h2>Questões discurssiva - Membros Inferiores</h2>
+            <h3>Um paciente apresenta dificuldade para realizar a adução da coxa após uma lesão nervosa. Com base na organização do plexo lombar e na inervação apresentada na aula, explique qual nervo provavelmente está comprometido e quais músculos ou região muscular são afetados.</h3>
+
+            <div class="campo-grupo">
+            <textarea id="ex19-r1" placeholder="Escreva sua resposta" rows="2"></textarea>
+            </div>
+
+        </article>
+
+        </section>
+
+        <!-- ==========================================
+            GABARITO — RADIOGRAFIA DE TÓRAX PA
+            24 estruturas numeradas
+        =========================================== -->
+
+
+
+    </main>
+
+    <script src="../scripts.js"></script>
+</body>

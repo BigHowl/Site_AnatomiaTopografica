@@ -623,3 +623,83 @@ details[open] .seta-accordion {
   color: var(--cor-texto-suave);
   margin-top: 2px;
 }
+
+/*Indicador de Progresso*/
+
+.progresso {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 100px;
+  border: 1.5px solid var(--cor-borda);
+}
+
+.progresso.vazio {
+  color: var(--cor-texto-suave);
+  background: var(--cor-fundo);
+}
+
+.progresso.parcial {
+  color: #92400E;               /* laranja escuro */
+  background: #FFFBEB;
+  border-color: #FCD34D;
+}
+
+.progresso.completo {
+  color: var(--cor-sucesso);
+  background: #F0FFF4;
+  border-color: #9AE6B4;
+}
+
+/*Ir para o gabarito e voltar*/
+.btn-gabarito {
+  background: transparent;
+  color: var(--cor-primaria);
+  border: 1.5px solid var(--cor-borda);
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-gabarito:hover {
+  background: var(--cor-borda);
+}
+
+/* Botão de voltar — discreto, dentro do gabarito */
+.btn-voltar-exercicio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--cor-acento);
+  text-decoration: none;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--cor-acento-claro);
+  background: var(--cor-acento-claro);
+  transition: all 0.2s;
+}
+
+.btn-voltar-exercicio:hover {
+  background: var(--cor-acento);
+  color: white;
+}
+
+/* Alternativa correta — verde */
+.opcoes label.correta {
+  background: #baecc8;
+  border-color: #38A169;
+  color: #276749;
+  font-weight: 600;
+}
+
+/* Alternativa errada — vermelha */
+.opcoes label.errada {
+  background: #eeb9b9;
+  border-color: var(--cor-erro);
+  color: #9B2C2C;
+}   
