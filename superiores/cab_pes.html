@@ -80,7 +80,74 @@
 
             <!-- Area de resposta aumenta conforme a resposta, diferente do input -->
 
-            <textarea id="ex1-r1" placeholder="Digite o nome da estrutura..." rows="1"></textarea>
+            <textarea id="ex1-r1" placeholder="Digite o nome da estrutura..." rows="2"></textarea>
+            </div>
+
+              <!-- Botão que abre o gabarito inline -->
+            <div class="botoes">
+                <button class="btn btn-secundario"
+                onclick="toggleGabaritoInline('gabarito-inline-ex1', this)">
+                Ver gabarito ↓
+                </button>
+            </div>
+
+            <!-- Gabarito inline — começa escondido -->
+            <div id="gabarito-inline-ex1" class="gabarito-inline">
+                <p class="gabarito-inline-titulo">Gabarito</p>
+                <table class="gabarito-tabela">
+                <thead>
+                    <tr>
+                    <th class="col-num">#</th>
+                    <th>Estrutura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="col-num">1</td>
+                    <td><span class="nome-estrutura">Lobo frontal</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">2</td>
+                    <td><span class="nome-estrutura">Gene do Corpo Caloso</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">3</td>
+                    <td><span class="nome-estrutura">Putamen</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">4</td>
+                    <td><span class="nome-estrutura">Tálamo</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">5</td>
+                    <td><span class="nome-estrutura">Lobo Occipital</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">6</td>
+                    <td><span class="nome-estrutura">Lobo Parietal</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">7</td>
+                    <td><span class="nome-estrutura">Splenio do corpo caloso </span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">8</td>
+                    <td><span class="nome-estrutura">Caudado</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">9</td>
+                    <td><span class="nome-estrutura">--</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">10</td>
+                    <td><span class="nome-estrutura">--</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">11</td>
+                    <td><span class="nome-estrutura">--</span></td>
+                    </tr>
+                </tbody>
+                </table>
             </div>
 
 
@@ -149,6 +216,74 @@
             <div class="campo-grupo">
             <textarea id="ex5-r1" placeholder="Nomeie as estruturas..." rows="2"></textarea>
             </div>
+
+              <!-- Botão que abre o gabarito inline -->
+            <div class="botoes">
+                <button class="btn btn-secundario"
+                onclick="toggleGabaritoInline('gabarito-inline-ex5', this)">
+                Ver gabarito ↓
+                </button>
+            </div>
+
+            <!-- Gabarito inline — começa escondido -->
+            <div id="gabarito-inline-ex5" class="gabarito-inline">
+                <p class="gabarito-inline-titulo">Gabarito</p>
+                <table class="gabarito-tabela">
+                <thead>
+                    <tr>
+                    <th class="col-num">#</th>
+                    <th>Estrutura</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="col-num">1</td>
+                    <td><span class="nome-estrutura">Terceiro Ventrículo</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">2</td>
+                    <td><span class="nome-estrutura">Glândula Pineal</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">3</td>
+                    <td><span class="nome-estrutura">Cabeça do núcleo caudado</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">4</td>
+                    <td><span class="nome-estrutura">Frontal Horn</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">5</td>
+                    <td><span class="nome-estrutura">Putamen</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">6</td>
+                    <td><span class="nome-estrutura">Tálamo</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">7</td>
+                    <td><span class="nome-estrutura">Temporal Horn</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">8</td>
+                    <td><span class="nome-estrutura">Átrio do ventrículo lateral</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">9</td>
+                    <td><span class="nome-estrutura">Occipital Horn</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">10</td>
+                    <td><span class="nome-estrutura">--</span></td>
+                    </tr>
+                    <tr>
+                    <td class="col-num">11</td>
+                    <td><span class="nome-estrutura">--</span></td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+
         </article>
 
         <article class="exercicio">
@@ -221,17 +356,17 @@
 
             <div class="campo-grupo">
             <form class="opcoes">
-                <label><input type="radio" name="q1" value="A"> A) Glândula tireoide</label>
-                <label><input type="radio" name="q1" value="B"> B) Glândula pineal</label>
-                <label><input type="radio" name="q1" value="C"> C) Hipófise</label>
-                <label><input type="radio" name="q1" value="C"> C) Glândula parótida</label>
-                <label><input type="radio" name="q1" value="C"> C) Glândula submandibular</label>
+                <label><input type="radio" name="cp1-q9" value="A"> A) Glândula tireoide</label>
+                <label><input type="radio" name="cp1-q9" value="B"> B) Glândula pineal</label>
+                <label><input type="radio" name="cp1-q9" value="C"> C) Hipófise</label>
+                <label><input type="radio" name="cp1-q9" value="D"> D) Glândula parótida</label>
+                <label><input type="radio" name="cp1-q9" value="E"> E) Glândula submandibular</label>
             </form>
             </div>
 
         <div class="botoes">
             <button class="btn btn-principal"
-            onclick="verificarMC('cp1-q6', 'C', 'fb-cp1-q6')">
+            onclick="verificarMC('cp1-q9', 'C', 'fb-cp1-q9')">
             Verificar resposta
             </button>
             <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
@@ -247,17 +382,17 @@
 
             <div class="campo-grupo">
             <form class="opcoes">
-                <label><input type="radio" name="q1" value="A"> A) C1 (atlas)</label>
-                <label><input type="radio" name="q1" value="B"> B) C2 (áxis)</label>
-                <label><input type="radio" name="q1" value="C"> C) C3</label>
-                <label><input type="radio" name="q1" value="C"> C) C6</label>
-                <label><input type="radio" name="q1" value="C"> C) C7</label>
+                <label><input type="radio" name="cp1-q10" value="A"> A) C1 (atlas)</label>
+                <label><input type="radio" name="cp1-q10" value="B"> B) C2 (áxis)</label>
+                <label><input type="radio" name="cp1-q10" value="C"> C) C3</label>
+                <label><input type="radio" name="cp1-q10" value="D"> D) C6</label>
+                <label><input type="radio" name="cp1-q10" value="E"> E) C7</label>
             </form>
             </div>
 
         <div class="botoes">
             <button class="btn btn-principal"
-            onclick="verificarMC('cp1-q6', 'C', 'fb-cp1-q6')">
+            onclick="verificarMC('cp1-q10', 'B', 'fb-cp1-q6')">
             Verificar resposta
             </button>
             <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
@@ -272,13 +407,22 @@
         
         <div class="campo-grupo">
         <form class="opcoes">
-            <label><input type="radio" name="q1" value="A"> A) Do forame vertebral exclusivamente em C1 e C2</label>
-            <label><input type="radio" name="q1" value="B"> B) De forames transversos que permitem a passagem de artérias</label>
-            <label><input type="radio" name="q1" value="C"> C) De corpos vertebrais maiores que os das vértebras lombares</label>
-            <label><input type="radio" name="q1" value="D"> D) De discos intervertebrais entre C1 e C2</label>
-            <label><input type="radio" name="q1" value="E"> E) Do processo odontoide em todas as vértebras cervicais</label>
+            <label><input type="radio" name="cp1-q11" value="A"> A) Do forame vertebral exclusivamente em C1 e C2</label>
+            <label><input type="radio" name="cp1-q11" value="B"> B) De forames transversos que permitem a passagem de artérias</label>
+            <label><input type="radio" name="cp1-q11" value="C"> C) De corpos vertebrais maiores que os das vértebras lombares</label>
+            <label><input type="radio" name="cp1-q11" value="D"> D) De discos intervertebrais entre C1 e C2</label>
+            <label><input type="radio" name="cp1-q11" value="E"> E) Do processo odontoide em todas as vértebras cervicais</label>
         </form>
         </div>
+
+        <div class="botoes">
+            <button class="btn btn-principal"
+            onclick="verificarMC('cp1-q11', 'B', 'fb-cp1-q6')">
+            Verificar resposta
+            </button>
+            <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>
+        </div>
+        <div id="fb-cp1-q6" class="feedback"></div>
 
         </article>
 
@@ -312,17 +456,17 @@
 
         <div class="campo-grupo">
         <form class="opcoes">
-            <label><input type="radio" name="cp1-q6" value="A"> A) Não apresentam comunicação com a cavidade nasal</label>
-            <label><input type="radio" name="cp1-q6" value="B"> B) Estão localizados exclusivamente no osso frontal</label>
-            <label><input type="radio" name="cp1-q6" value="C"> C) Recebem seus nomes de acordo com os ossos nos quais estão localizados</label>
-            <label><input type="radio" name="cp1-q6" value="D"> D) São preenchidos normalmente por líquido cerebrospinal</label>
-            <label><input type="radio" name="cp1-q6" value="E"> E) Pertencem exclusivamente à cavidade craniana</label>
+            <label><input type="radio" name="cp1-q13" value="A"> A) Não apresentam comunicação com a cavidade nasal</label>
+            <label><input type="radio" name="cp1-q13" value="B"> B) Estão localizados exclusivamente no osso frontal</label>
+            <label><input type="radio" name="cp1-q13" value="C"> C) Recebem seus nomes de acordo com os ossos nos quais estão localizados</label>
+            <label><input type="radio" name="cp1-q13" value="D"> D) São preenchidos normalmente por líquido cerebrospinal</label>
+            <label><input type="radio" name="cp1-q13" value="E"> E) Pertencem exclusivamente à cavidade craniana</label>
         </form>
         </div>
         
         <div class="botoes">
             <button class="btn btn-principal"
-            onclick="verificarMC('cp1-q6', 'C', 'fb-cp1-q6')">
+            onclick="verificarMC('cp1-q13', 'C', 'fb-cp1-q13')">
             Verificar resposta
             </button>
             <a href="#gabarito-cp1" class="btn btn-gabarito">Ver gabarito ↓</a>

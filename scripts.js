@@ -270,3 +270,20 @@ function verificarMC(nomeQuestao, gabarito, idFeedback) {
     feedback.textContent = '✗ Incorreto. A alternativa correta está destacada em verde.';
   }
 }
+
+
+// TOGGLE GABARITO 
+// Abre e fecha o gabarito dentro da questão.
+// O botão muda de texto conforme o estado.
+
+function toggleGabaritoInline(idGabarito, botao) {
+  var gabarito = document.getElementById(idGabarito);
+  gabarito.classList.toggle('visivel');
+
+  // Muda o texto do botão conforme estado
+  if (gabarito.classList.contains('visivel')) {
+    botao.textContent = 'Fechar gabarito ↑';
+  } else {
+    botao.textContent = 'Ver gabarito ↓';
+  }
+}

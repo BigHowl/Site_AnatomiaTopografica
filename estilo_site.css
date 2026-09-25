@@ -703,3 +703,29 @@ details[open] .seta-accordion {
   border-color: var(--cor-erro);
   color: #9B2C2C;
 }   
+
+/* 
+   GABARITO INLINE — dentro da própria questão
+ */
+.gabarito-inline {
+  display: none;              /* escondido por padrão */
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: var(--cor-acento-claro);
+  border-left: 4px solid var(--cor-acento);
+  border-radius: 0 8px 8px 0;
+  animation: fadeIn 0.3s ease;
+}
+
+.gabarito-inline.visivel {
+  display: block;
+}
+
+.gabarito-inline-titulo {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cor-acento);
+  margin-bottom: 12px;
+}
